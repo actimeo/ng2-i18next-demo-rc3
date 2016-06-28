@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import 'i18next';
+import 'i18nextXHRBackend';
+import 'i18nextBrowserLanguageDetector';
 
 @Component({
   moduleId: module.id,
