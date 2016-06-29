@@ -2,3 +2,8 @@
 <input type="text" i18n-placeholder="what-is-your-name">
 <br>
 <button (click)="onclick()">{{localizedText}}</button>
+<p i18n='{"not_found_key": {"defaultValue": "a default value via option"}}'></p>
+<p>
+  <span i18n='{"counter": {"count": {{theCounter}}}}'></span>
+  <button (click)="incCounter()">+</button> {{theCounter}}
+</p>

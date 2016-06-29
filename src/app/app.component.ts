@@ -28,11 +28,16 @@ const NG2_I18NEXT_PROVIDERS = [provide(I18nServiceConfig, {
   directives: [I18nDirective]
 })
 export class AppComponent {
+  theCounter: number = 1;
   localizedText: string = 'Press to load localized text';
 
   constructor(private i18n: I18nService) { }
 
   onclick() {
     this.localizedText = this.i18n.t('hello-world');
+  }
+
+  incCounter() {
+    this.theCounter++;
   }
 }
